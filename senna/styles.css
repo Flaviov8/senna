@@ -1,0 +1,148 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sena.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixa a imagem de fundo para evitar rolagem */
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Largura máxima do formulário */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Cor do texto para melhor contraste */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Cor do texto para melhor contraste */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: box-shadow 0.3s ease; /* Adiciona uma transição suave para a sombra */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Sombra azul quando o input está em foco */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+    background-color: #313533;
+    animation: pulse 1s infinite; /* Aplica a animação "pulse" ao botão quando o mouse está sobre ele */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    body {
+        background-size: contain; /* Ajusta a imagem para caber na tela */
+        background-position: top center; /* Posiciona a imagem no topo */
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-size: contain; /* Ajusta a imagem para caber na tela */
+        background-position: top center; /* Posiciona a imagem no topo */
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
