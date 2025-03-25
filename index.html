@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Contato Responsivo</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS -->
+    <title>SN Pinturas - Formulário de Contato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="form-container">
@@ -19,13 +20,81 @@
                 <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
             </div>
-            <button type="button" id="whatsappButton">Seu orçamento agora</button>
+            <div class="form-group">
+                <label for="service">Serviço desejado:</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Selecione o serviço necessário</option>
+                    
+                    <optgroup label="🎨 Pinturas Especializadas">
+                        <option value="Pintura residencial">🏠 Pintura residencial</option>
+                        <option value="Pintura comercial">🏢 Pintura comercial</option>
+                        <option value="Pintura de fachadas">🏛️ Pintura de fachadas</option>
+                        <option value="Pintura decorativa">🖌️ Pintura decorativa</option>
+                        <option value="Pintura de textura">🧱 Pintura de textura</option>
+                    </optgroup>
+                    
+                    <optgroup label="🌟 Gesso 3D">
+                        <option value="Instalação de gesso 3D">✨ Instalação de gesso 3D</option>
+                        <option value="Pintura de gesso 3D">🎨 Pintura de gesso 3D</option>
+                        <option value="Reparo em gesso 3D">🔧 Reparo em gesso 3D</option>
+                        <option value="Design personalizado em gesso 3D">✏️ Design personalizado</option>
+                    </optgroup>
+                    
+                    <optgroup label="🧱 Drywall">
+                        <option value="Instalação de drywall">🛠️ Instalação de drywall</option>
+                        <option value="Pintura de drywall">🎨 Pintura de drywall</option>
+                        <option value="Reparo em drywall">🔨 Reparo em drywall</option>
+                        <option value="Forro em drywall">🏗️ Forro em drywall</option>
+                        <option value="Divisórias em drywall">🚪 Divisórias em drywall</option>
+                    </optgroup>
+                    
+                    <optgroup label="🖌️ Acabamentos">
+                        <option value="Massas e acabamentos">🧱 Massas e acabamentos</option>
+                        <option value="Texturas decorativas">🌟 Texturas decorativas</option>
+                        <option value="Revestimentos especiais">💎 Revestimentos especiais</option>
+                        <option value="Impermeabilização">🌧️ Impermeabilização</option>
+                    </optgroup>
+                    
+                    <optgroup label="🏡 Serviços Residenciais">
+                        <option value="Pintura de paredes internas">🏠 Pintura interna</option>
+                        <option value="Pintura de tetos">🔼 Pintura de tetos</option>
+                        <option value="Pintura de portas e janelas">🚪 Pintura de portas/janelas</option>
+                        <option value="Pintura de móveis">🪑 Pintura de móveis</option>
+                    </optgroup>
+                    
+                    <optgroup label="🏢 Serviços Comerciais">
+                        <option value="Pintura de lojas">🛍️ Pintura de lojas</option>
+                        <option value="Pintura de escritórios">💼 Pintura de escritórios</option>
+                        <option value="Pintura de fachadas comerciais">🏬 Pintura de fachadas</option>
+                        <option value="Sinalização pintada">📢 Sinalização pintada</option>
+                    </optgroup>
+                    
+                    <optgroup label="🔧 Outros Serviços">
+                        <option value="Preparação de superfícies">🧹 Preparação de superfícies</option>
+                        <option value="Lixamento e tratamento">🔄 Lixamento e tratamento</option>
+                        <option value="Consultoria em cores e projetos">🎨 Consultoria em cores</option>
+                        <option value="Orçamento personalizado">💲 Orçamento personalizado</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Detalhes do serviço necessário:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Descreva com detalhes o serviço que precisa (área, tipo de superfície, preferências de cores, etc.)" required></textarea>
+            </div>
+            <button type="button" id="whatsappButton">Solicitar Orçamento via WhatsApp</button>
         </form>
-    </div>
+        
+        <div class="footer">
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/sena_arts_grafites/" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
 
-    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
